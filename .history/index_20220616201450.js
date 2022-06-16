@@ -1,23 +1,11 @@
-function reverseString(word) {
-  // create an array from the input string
-  return word.split("").reverse().join("");
-}
-
 function isPalindrome(word) {
-  // reverse the input string
-  const reversedWord = reverseString(word);
-  // if the reversed string is the same as the input
-  return word === reversedWord
-
+  // Write your algorithm here
+  return word.split("").reverse().join("")
 }
 
-
+funct
 /* 
-  reverse the input string
-if the reversed string is the same as the input
-  return true
-else
-  return false
+  Add your pseudocode here
 */
 
 /*
@@ -26,10 +14,14 @@ else
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
+  // add your own custom tests in here
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
   console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("robot"));
 
   console.log("Expecting: true");
   console.log("=>", isPalindrome("mom"));
@@ -50,9 +42,6 @@ if (require.main === module) {
   console.log("=>", isPalindrome("hi"));
 
   console.log("");
-
-  console.log("Expecting: false");
-  console.log("=>", isPalindrome("robot"));
 }
 
 module.exports = isPalindrome;
